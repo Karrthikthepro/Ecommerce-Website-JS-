@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to bottom right, rgb(10, 53, 245),rgb(0, 89, 255),rgb(0, 132, 255));
+    margin : 1px;
+}                 
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background: pink;
+}
+li{
+    float: right;
+}
+.logo{
+    float: left;
+    padding: 14px 16px;
+}
+ul>li>img{
+    width: 90px;
+}
+ul>li>button>img{
+    width: 100px;
+    margin-right: 15px;
+}
+#course-card-container{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+.course-card{
+    width: 250px;
+    margin: 20px;
+    background: pink;
+    padding: 14px 16px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: gray 6px 6px;
+}
+.course-card:hover{
+    transform: scale(1.05);
+}
+.course-card>.header-img>img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+.meta-info{
+    color: rgb(30, 102, 210);
+    font-size: 20px;
+    margin: 10px 0;
+    font-family:Raleway, sans-serif;
+}
+.course-title{
+    font-size: 20px;
+    margin: 0;
+    font-family:Raleway, sans-serif;
+    font-weight: 700;
+}
+.btn{
+    padding: 2px 5px;
+    margin: 0;
+    color: rgb(255, 174, 0);
+    background: blue;
+    border-radius: 5px;
+    font-family:Raleway, sans-serif;
+}    
+.over{
+    position:absolute;
+    background: white;
+    height: 420px;
+    width: 420px;
+    margin-top: -80px;
+    margin-left: 780px;
+    padding: 0;
+    border-bottom-right-radius:30px;
+    border-bottom-left-radius:30px;
+    overflow: hidden;
+    display:block;
+    z-index: 1;
+}
+ul>li>button{
+    width: 100px;
+    height: 100px;
+    background: pink;
+}
+table{
+    width: 100%;
+    box-sizing: border-box;
+}
+hr{
+    height: 6px;
+    background-color: black;
+}
+#empty{
+    width: 100%;
+    height: 40px;
+    font-family: Raleway, sans-serif;
+    background-image: linear-gradient(to bottom right, red,orange,yellow);
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+th{
+    font-family: Raleway,sans-serif;
+    font-weight: bold;
+    color: red;
+}
