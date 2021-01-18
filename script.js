@@ -1,8 +1,8 @@
 //Variable
 const cart=document.getElementById("cart");
-const courses=document.getElementById("course-card-container");
-const emptybtn=document.getElementById("empty");
-const listCourses=document.querySelector("#list-cart")
+const courses=document.getElementById("list-courses");
+const emptybtn=document.getElementById("empty-cart");
+const listCourses=document.querySelector("#list-cart tbody")
 
 //Listners
 loadEventListeners();
@@ -21,7 +21,7 @@ function loadEventListeners(){
 //Function that adds the course to cart
 function buyCourse(e){
     e.preventDefault();
-    if(e.target.classList.contains("btn")){
+    if(e.target.classList.contains("add-cart")){
         const course=e.target.parentElement.parentElement;
         readDataCourse(course);
     }
@@ -33,7 +33,7 @@ function readDataCourse(course){
         image: course.querySelector('img').src,
         name: course.querySelector('.name').textContent,
         price:course.querySelector('.price').textContent,
-        id:course.querySelector("button").getAttribute('data-id')
+        id:course.querySelector("a").getAttribute('data-id')
     }
     insertInCart(infoCourse);
 }
